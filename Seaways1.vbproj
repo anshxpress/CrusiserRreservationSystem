@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD2C5224-0883-49B1-BA3B-BAB8C42764D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Seaways1.My.MyApplication</StartupObject>
+    <RootNamespace>Seaways1</RootNamespace>
+    <AssemblyName>Seaways1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Seaways1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Seaways1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN LOGIN.Designer.vb">
+      <DependentUpon>ADMIN LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN Page.Designer.vb">
+      <DependentUpon>ADMIN Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Cancle Reservation.Designer.vb">
+      <DependentUpon>Cancle Reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cancle Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLECTION.Designer.vb">
+      <DependentUpon>COLLECTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLECTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cruiser.Designer.vb">
+      <DependentUpon>cruiser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cruiser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="print cancle ticket.Designer.vb">
+      <DependentUpon>print cancle ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="print cancle ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print ticket.Designer.vb">
+      <DependentUpon>Print ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Print ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintRefundReceipt.vb" />
+    <Compile Include="Refund.Designer.vb">
+      <DependentUpon>Refund.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Refund.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation.Designer.vb">
+      <DependentUpon>Reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleCruise.Designer.vb">
+      <DependentUpon>ScheduleCruise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleCruise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Cruise.Designer.vb">
+      <DependentUpon>Search Cruise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Cruise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sector.Designer.vb">
+      <DependentUpon>Sector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ships.Designer.vb">
+      <DependentUpon>ships.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ships.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.vb">
+      <DependentUpon>signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket Status.designer.vb">
+      <DependentUpon>Ticket Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ADMIN LOGIN.resx">
+      <DependentUpon>ADMIN LOGIN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN Page.resx">
+      <DependentUpon>ADMIN Page.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancle Reservation.resx">
+      <DependentUpon>Cancle Reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLECTION.resx">
+      <DependentUpon>COLLECTION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cruiser.resx">
+      <DependentUpon>cruiser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print cancle ticket.resx">
+      <DependentUpon>print cancle ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print ticket.resx">
+      <DependentUpon>Print ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refund.resx">
+      <DependentUpon>Refund.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservation.resx">
+      <DependentUpon>Reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleCruise.resx">
+      <DependentUpon>ScheduleCruise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Cruise.resx">
+      <DependentUpon>Search Cruise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sector.resx">
+      <DependentUpon>Sector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ships.resx">
+      <DependentUpon>ships.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Status.resx">
+      <DependentUpon>Ticket Status.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1280x1024_sydney.jpg" />
+    <Content Include="Resources\988120305.png" />
+    <Content Include="Resources\9881203051.png" />
+    <Content Include="Resources\Aeroplane-HD-Wallpapers-For-PC.jpg" />
+    <Content Include="Resources\air.jpg" />
+    <Content Include="Resources\airlines.gif" />
+    <Content Include="Resources\cruise_ship.png" />
+    <Content Include="Resources\images %2838%29.jpg" />
+    <Content Include="Resources\images %2864%29.jpg" />
+    <Content Include="Resources\images %2865%29.jpg" />
+    <Content Include="Resources\indairline.jpg" />
+    <Content Include="Resources\indairline1.jpg" />
+    <Content Include="Resources\LogKey64.jpg" />
+    <Content Include="Resources\logo.jpg" />
+    <Content Include="Resources\micky.jpg" />
+    <Content Include="Resources\Picture1.png" />
+    <Content Include="Resources\pink-fairy-plain-colour-1.jpg" />
+    <Content Include="Resources\Presentation1.jpg" />
+    <Content Include="Resources\Presentation1.png" />
+    <Content Include="Resources\Presentation1l.jpg" />
+    <Content Include="Resources\Presentation1l1.jpg" />
+    <Content Include="Resources\vecteezySummerSceneryBackgroundAP0521_generated.jpg" />
+    <Content Include="Resources\vecteezy_night-seascape-view-from-cruise-ship-deck_15370161.jpg" />
+    <Content Include="Resources\vecteezy_swimming-pool-and-beach-chairs-on-cruise-ship-deck_15370227.jpg" />
+    <Content Include="Resources\Vista_icons_04.png" />
+    <Content Include="Resources\when-the-road-meet-the-sky %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
